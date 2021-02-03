@@ -20,4 +20,4 @@ The print process can now begin. It goes on by sending the arduino packages of g
 ## Resources
 In the Records folder there are many demo images of printed parts used to replace the old wooden ones
 
-For some demo videos I refer you to my dedicated google drive [folder](https://drive.google.com/drive/folders/1-1SE9T9Bii7azsfO967qi_PxQ38gY363?usp=sharing)
+For the demo videos of the parts and 2 random gadgets I printed, I refer you to my dedicated google drive [folder](https://drive.google.com/drive/folders/1-1SE9T9Bii7azsfO967qi_PxQ38gY363?usp=sharing)
