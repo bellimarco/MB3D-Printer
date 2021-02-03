@@ -3,7 +3,7 @@
 Random project that kept me busy during the 2020 summer quarantine.
 
 Designed, assembled and programmed completely in-house.
-It is an alternative type of 3d printer I thought of while considering the detrements of motor moving along with a cartesian axis of traditional 3d printers. A malus already avoided in the CoreXY designs by not having any motors moving around, but I still wanted to build something innovative that could also retain the benefits of threaded rod instead of belt control. And (obviously) inspired by my recently finished highschool project ([DisegnatoreRemoto](https://github.com/bellimarco/DisegnatoreRemoto)) this polar axis control design was born.
+It is an alternative type of 3d printer I thought of while considering the detrements of a motor moving along with a cartesian axis of traditional 3d printers. A malus already avoided in the CoreXY designs by not having any motors moving around, but I still wanted to build something innovative that could also retain the benefits of threaded rod instead of belt control. And (obviously) inspired by my recently finished highschool project ([DisegnatoreRemoto](https://github.com/bellimarco/DisegnatoreRemoto)) this polar axis control design was born.
 
 ## From 3D file to real object
 Like for most 3d printer setups the first step is to design the object in some 3d modeling software (Fusion360) and exporting the related .stl file.
