@@ -1,5 +1,5 @@
 # MB3D-Printer
-![](Records/Final version.jpg)
+![](Records/Final version.JPG)
 
 The 3D Printer I built during the 2020 quarantine. Like the [plotter project](https://github.com/bellimarco/DisegnatoreRemoto) I had just finished, it is based on a polar setup with two stepper motors for radius and angle, and another stepper for the bed height.
 
