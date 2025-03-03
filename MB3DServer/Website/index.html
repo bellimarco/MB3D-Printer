@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/libraries/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <div id="leftmaindiv">
+
+
+      <div id="LiveGui">
+        <div id="LiveInfo">
+
+          <div style="display:inline-block">
+            <div style="margin-top:1em;">
+              <div class="column">
+                <span>PrintFan</span>
+                <span>HotFan</span>
+                <span>HotTemp</span>
+                <span>HotTarg</span>
+                <span>HotEffort</span>
+              </div>
+              <div class="column">
+                <span id="PrintFan">0</span>
+                <span id="HotFan">0</span>
+                <span id="HotTemp">20</span>
+                <span id="HotTarg">20</span>
+                <span id="HotEffort">0</span>
+              </div>
+              <div class="column">
+                <span>%</span>
+                <span>%</span>
+                <span>°C</span>
+                <span>°C</span>
+              </div>
+              <div class="column">
+                <button id="ToggleThermUpdateLoop">ToggleThermUpdateLoop</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="ControlCoords">
+          <div class="column">
+            <div>Cart: </div>
+            <div>Step: </div>
+            <div>traslate: </div>
+            <div>homing: </div>
+            <div>set pos: </div>
+          </div>
+          <div class="column">
+            <div id="XCart">0</div>
+            <div id="RStep">0</div>
+            <input id="Xtraslate" type="text" placeholder="0">
+            <button id="Xhome">X</button>
+            <input id="Xsetpos" type="text" placeholder="current">
+          </div>
+          <div class="column">
+            <div id="YCart">0</div>
+            <div id="AStep">0</div>
+            <input id="Ytraslate" type="text" placeholder="0">
+            <button id="Yhome">Y</button>
+            <input id="Ysetpos" type="text" placeholder="current">
+          </div>
+          <div class="column">
+            <div id="ZCart">0</div>
+            <div id="ZStep">0</div>
+            <input id="Ztraslate" type="text" placeholder="0">
+            <button id="Zhome">Z</button>
+            <input id="Zsetpos" type="text" placeholder="current">
+          </div>
+          <div class="column">
+            <div id="ECart">0</div>
+            <div id="EStep">0</div>
+            <input id="Etraslate" type="text" placeholder="0">
+            <button id="XYZhome">XYZ</button>
+            <input id="Esetpos" type="text" placeholder="current">
+          </div>
+          <div style="margin:0.4em">
+            <button id="Play" style="height:5em;width:5em;margin-left:0.5em;">play</button>
+            <button id="SingleCode" style="height:5em;width:5em;margin-left:0.5em;vertical-align:top;">send single code</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="GcodeManager">
+        <div style="display:inline-block;width:31%">
+          <div id="FileSize">total: 0</div>
+          <div id="GcodesRemaining">remaining: 0</div>
+          <div id="CurrentIndex">current: -1</div>
+        </div>
+        <div style="display:inline-block;width:35%;vertical-align:top;"><input id="CustomGcode" type="text" placeholder="custom Gcode"></div>
+        <button id="ManUpdateBuffers">Update Buffers</button>
+        <div style="margin-top: 0.5em">
+          <div style="display:inline-block;width:55%;vertical-align:top;">
+            <span id="GcodeBufferSize">Gcode buffer: 3</span>
+            <div id="GcodeBuffer">
+              <div class="BufferLine" id="gbuff-1">gcode 1</div>
+            </div>
+          </div>
+          <div style="display:inline-block;width:40%;vertical-align:top;">
+            <span id="MotionBufferSize">motion buffer: 3</span>
+            <div id="MotionBuffer">
+              <div class="BufferLine" id="mbuff-1">motion 1</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="rightmaindiv">
+
+      <div id="other">
+        <div>
+          Load Gcode file:
+          <input id="LoadFile" type="text" placeholder="untitled">
+          <input id="SendSerial" type="text" placeholder="send serial">
+        </div>
+        <div>
+          Resume from fail:
+          <input id="SetLastIndex" type="text" placeholder="last index">
+          <button id="Startup">startup</button>
+          <button id="LastZ">last z</button>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "MB3DServer",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "mb3d.js",
+  "scripts": {
+    "test": "console.log('mb3d test')"
+  },
+  "author": "Marco Belli",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serialport": "^8.0.7"
+  }
+}
